@@ -9,6 +9,8 @@ $(document).ready(function() {
 	$('.left-arrow').hide();
 	$('.right-arrow').hide();
 	$('.lb-3').hide();
+	$('.projects-container').hide();
+	$('.lb-4').hide();
 
 	// Home Page //
 
@@ -26,10 +28,11 @@ $(document).ready(function() {
 	$('.right-arrow').on('click', function() {
 			var scrollLocation = $(window).height();
 			$('.lb-3').fadeIn(500, function() {
-			$('html, body').animate({
-    	scrollTop: $(".lb-3").offset().top
-			}, 1000);
+				$('html, body').animate({
+	    	scrollTop: $(".lb-3").offset().top
+				}, 1000);
 			$('a.active').css('color', '#777');
+			$('.projects-container').delay(1000).fadeIn(500)
 		});
 	});
 
@@ -37,11 +40,9 @@ $(document).ready(function() {
 		wordArray = ['Dynamic', 'User-Oriented', 'Passionate', 'Provocative']
 		for (i = 0; i < wordArray.length; i++) { 
 			$('.changing-text').delay(1000).text(wordArray[i]);
+    	};
     };
-  };
-
-
-
+ 	
 	setTimeout( changingText, 10000);
 
 

@@ -5,17 +5,17 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
 	
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" href="src/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
 
-	<script src="main.js"></script>
-	<script src="src/js/jquery.cycleText.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery.cycleText.js"></script>
+	<script src="js/freewall.js"></script>
 
 </head>
 <body>
@@ -40,8 +40,8 @@
 		<div class="my-approach-holder">
 			<p class="my-approach">My Approach is <span id="demo">User-Oriented|Minimalist|Responsive|Engaging</span></p>
 		</div>
-		<img class="left-arrow" src="arrow-down.png">
-		<img class="right-arrow" src="arrow-down.png">
+		<img class="left-arrow" src="images/arrow-down.png">
+		<img class="right-arrow" src="images/arrow-down.png">
 	</div>
 
 	<!-- Projects Show Page -->
@@ -56,30 +56,42 @@
 				</ul>
 			</nav>
 			<div class="holder">
-			<div class="about-title-container">
-				<h1 class="about-title">My Projects</h1>
-			</div>
-			<div class="projects-container">
-				<div class="col-md-4 project-holder">
-					<img class="project-photo" src="tictactoe.png">
+				<div class="about-title-container">
+					<h1 class="about-title">My Projects</h1>
 				</div>
-				<div class="col-md-8 project-holder">
-					<img class="project-photo" src="seatyourself.png"
-				</div>
-			</div>
-			<div class="projects-container">
-				<div class="col-md-8 project-holder">
-					<img class="project-photo" src="blog.png">
-				</div>
-				<div class="col-md-4 project-holder">
-					<img class="project-photo" src="schedjewels.png">
+
+				<div class="projects-container container-fluid">
+					<div class="project-holder col-sm-3">
+							<img class="project-photo" src="images/tictactoe.png">
+
+					</div>
+					<div class="project-holder col-sm-3">
+						<img class="project-photo" src="images/seatyourself.png">
+					</div>
+					<div class="project-holder col-sm-3">
+						<img class="project-photo" src="images/blog.png"
+					</div>
+					<div class="project-holder col-sm-3">
+						<img class="project-photo" src="images/schedjewels.png">
+					</div>
 				</div>
 			</div>
 	</div>
 
+	<!-- Contact Page -->
 
-	<div class="project-page">
-
+	<div class="lb-4">
+		<nav class="navbar">
+			<ul class="item-holder">
+				<li class="item"><a href="#">Home</a></li>
+				<li class="item"><a href="#" class="active">About</a></li>
+				<li class="item"><a href="#">Projects</a></li>
+				<li class="item"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="about-title-container">
+			<h1 class="about-title">Let's build something together!</h1>
+		</div>
 	</div>
 
 	<div class="contact-page">
