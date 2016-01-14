@@ -29,6 +29,7 @@ $(document).ready(function() {
 			$('html, body').animate({
     	scrollTop: $(".lb-3").offset().top
 			}, 1000);
+			$('a.active').css('color', '#777');
 		});
 	});
 

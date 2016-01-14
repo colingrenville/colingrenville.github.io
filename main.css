@@ -1,6 +1,6 @@
 body {
 	font-family: 'Lato', sans-serif;
-	color: lightblue ;
+	background-color: lightblue ;
 }
 
 @-webkit-keyframes COLORS {
@@ -103,6 +103,9 @@ body {
 	color: black;
 }
 
+a.active {
+}
+
 .my-approach-holder {
 	display: flex;
 	margin-top: 10vh;
@@ -132,8 +135,39 @@ body {
 
 .lb-3 {
 	margin-top: 0;
-	height: 100vh;
+	min-height: 250vh;
 	max-width: 100vw;
 	background-color: #E6BBAD;
-	padding-top: 10vh;
 }
+
+.project-title {
+	height: 20vh;
+	background-color: white;
+	float: left;
+}
+
+.about-title {
+	display: inline-block;
+	margin-left: 5vw;
+	color: white;
+	font-size: 4em;
+	padding-bottom: 1vh;
+	border-bottom: 3px solid white;
+}
+
+.projects-container {
+	width: 100%;
+}
+
+.project-holder {
+	height: 60vh;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	overflow: hidden;
+}
+
+.project-photo {
+	width: 100%;
+	overflow: hidden;
+}
+
