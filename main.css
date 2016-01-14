@@ -1,0 +1,139 @@
+body {
+	font-family: 'Lato', sans-serif;
+	color: lightblue ;
+}
+
+@-webkit-keyframes COLORS {
+  0%  { background-color: blue; }
+  10% { background-color: purple; }
+  20% { background-color: pink; }
+  30% { background-color: red; }
+  40% { background-color: orange; }
+  50% { background-color: yellow; }
+  60% { background-color: aqua; }
+  70% { background-color: green; }
+  80% { background-color: gold; }
+  90% { background-color: orchid; }
+  100% {background-color: darkorange; }
+}
+@-moz-keyframes COLORS {
+  0%  { background-color: blue; }
+  10% { background-color: purple; }
+  20% { background-color: pink; }
+  30% { background-color: red; }
+  40% { background-color: orange; }
+  50% { background-color: yellow; }
+  60% { background-color: aqua; }
+  70% { background-color: green; }
+  80% { background-color: gold; }
+  90% { background-color: orchid; }
+}
+@-o-keyframes COLORS {
+  0%  { background-color: blue; }
+  10% { background-color: purple; }
+  20% { background-color: pink; }
+  30% { background-color: red; }
+  40% { background-color: orange; }
+  50% { background-color: yellow; }
+  60% { background-color: aqua; }
+  70% { background-color: green; }
+  80% { background-color: gold; }
+  90% { background-color: orchid; }
+}
+@keyframes COLORS {
+  0%  { background-color: blue; }
+  10% { background-color: purple; }
+  20% { background-color: pink; }
+  30% { background-color: red; }
+  40% { background-color: orange; }
+  50% { background-color: yellow; }
+  60% { background-color: aqua; }
+  70% { background-color: green; }
+  80% { background-color: gold; }
+  90% { background-color: orchid; }
+}
+
+.lb-1 {
+	padding-top: 20vh;
+	margin-top: 0;
+	animation: COLORS 2s;
+	height: 100vh;
+	width: 100vw;
+	background-color: lightblue;
+	color: white;
+	font-weight: 300;
+	font-size: 4em;
+
+}
+
+.intro-holder {
+	text-align: center;
+}
+
+.lb-2 {
+	margin-top: 0;
+	height: 100vh;
+	max-width: 100vw;
+	background-color: lightblue;
+	margin-bottom: 0;
+}
+
+.navbar {
+	height: 20vh;
+	background-color: #FFF;
+	border-bottom: 1px solid #EEE;
+}
+
+.item-holder {
+	margin-top: 12vh;
+	font-size: 1.5em;
+	display: flex;
+	position: absolute;
+}
+
+.item {
+	display: inline-block;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	position: relative;
+}
+
+.item a, a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.my-approach-holder {
+	display: flex;
+	margin-top: 10vh;
+	justify-content: left;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.my-approach, .changing-text {
+	display: inline-block;
+	color: white;
+	margin-right: .2em;
+  font-size: 4.5em;
+
+}
+
+.left-arrow {
+	margin-top: 35vh;
+	float: left;
+}
+
+.right-arrow {
+	margin-top: 35vh;
+	float: right;
+}
+
+.lb-3 {
+	margin-top: 0;
+	height: 100vh;
+	max-width: 100vw;
+	background-color: #E6BBAD;
+	padding-top: 10vh;
+}

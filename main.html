@@ -1,0 +1,76 @@
+<head>
+	<meta charset="UTF-8">
+	<title>Colin Grenville</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="src/css/animate.css">
+
+	<script src="main.js"></script>
+	<script src="src/js/jquery.cycleText.js"></script>
+
+</head>
+<body>
+<!-- 	Fade In Intro Page -->	
+ 	<div class="lb-1">
+		<div class="intro-holder">
+			<h1 class="intro">Hi, I'm Colin Grenville.</h1>
+			<h1 class="what-do">A Web Developer with a passion for making pretty things. </h1>
+		</div>
+	</div>
+<!-- Actual Landing Page -->	
+	
+	<div class="lb-2">
+		<nav class="navbar">
+			<ul class="item-holder">
+				<li class="item"><a href="#" id="home-trig">Home</a></li>
+				<li class="item"><a href="#" id="about-trig">About</a></li>
+				<li class="item"><a href="#" id="projects-trig">Projects</a></li>
+				<li class="item"><a href="#" id="contact-trig">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="my-approach-holder">
+			<p class="my-approach">My Approach is <span id="demo">User-Oriented|Minimalist|Responsive|Engaging</span></p>
+		</div>
+		<img class="left-arrow" src="arrow-down.png">
+		<img class="right-arrow" src="arrow-down.png">
+	</div>
+
+	<!-- Projects Show Page -->
+
+	<div class="lb-3">
+		<h1 class="project-title">Muh Projects</h1>
+	</div>
+
+
+	<div class="project-page">
+
+	</div>
+
+	<div class="contact-page">
+
+	</div>
+
+</body>
+<script>
+	$('#demo').cycleText({
+
+  separator: '|',
+
+  animation: 'flipInX',
+
+  interval: 3000
+
+});
+
+</script>
+
+</html>
