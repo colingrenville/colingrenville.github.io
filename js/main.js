@@ -94,18 +94,51 @@ $(document).ready(function() {
 	// About Page Interactive //
 
 	$('.yes-button').on('click', function() {
+		var clickCount = 0
 		$(this).fadeOut(500, function() {
 			$('.what-hear-holder').fadeIn(500);
 			$('.background-button').on('click', function() {
+				clickCount += 1
 				$('.what-hear-holder').slideUp(500, function() {
 						var background = $('#background')
 						$('.background-button').hide();
-						$('.what-hear-title').text('What would you like to learn about next?');
+						$('.what-hear-title').text('What would you like to hear about next?');
 						$('#background').fadeIn(500, textFadeLoop(background) );
+				});
+			});
+
+			$('.language-button').on('click', function() {
+				clickCount += 1
+				$('.what-hear-holder').slideUp(500, function() {
+					var language = $('#language')
+					$('.language-button').hide();
+					$('.what-hear-title').text('What would you like to hear about next?');
+					$('#language').fadeIn(500, textFadeLoop(language) );
+				});
+			});
+
+			$('.interest-button').on('click', function() {
+				clickCount += 1
+				$('.what-hear-holder').slideUp(500, function() {
+					var interest = $('#interest')
+					$('.interest-button').hide();
+					$('.what-hear-title').text('What would you like to hear about next?');
+					$('#interest').fadeIn(500, textFadeLoop(interest) );
 				});
 			});
 		});
 	});
+
+	function checkClickCount() {
+		if (clickCount === 2) {
+			$('.what-hear-title').text("Well, I guess there's only one option now!")
+		};
+
+		if (clickcount === 1) {
+			$('.what-hear-title').text('What would you like to hear about next?');
+		};
+		
+	};
 
 	function textFadeLoop(param) {
 		count = param.children('p').length;
