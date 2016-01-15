@@ -31,27 +31,27 @@
 	<div class="lb-2">
 		<nav class="navbar">
 			<ul class="item-holder">
-				<li class="item"><a href="#" id="home-trig">Home</a></li>
-				<li class="item"><a href="#" id="about-trig">About</a></li>
-				<li class="item"><a href="#" id="projects-trig">Projects</a></li>
+				<li class="item active"><a href="#" class="active" id="home-trig">Home</a></li>
+				<li class="item"><a href="#" id="about-trig">Projects</a></li>
+				<li class="item"><a href="#" id="projects-trig">About Me</a></li>
 				<li class="item"><a href="#" id="contact-trig">Contact</a></li>
 			</ul>
 		</nav>
 		<div class="my-approach-holder">
 			<p class="my-approach">My Approach is <span id="demo">User-Oriented|Minimalist|Responsive|Engaging</span></p>
 		</div>
-		<img class="left-arrow" src="images/arrow-down.png">
-		<img class="right-arrow" src="images/arrow-down.png">
+		<img class="arrow-1 float-left" src="images/arrow-down.png">
+		<img class="arrow-1 float-right" src="images/arrow-down.png">
 	</div>
 
 	<!-- Projects Show Page -->
 
 	<div class="lb-3">
-		<nav class="navbar">
+		<nav class="navbar n-2">
 				<ul class="item-holder">
 					<li class="item"><a href="#">Home</a></li>
-					<li class="item"><a href="#" class="active">About</a></li>
-					<li class="item"><a href="#">Projects</a></li>
+					<li class="item active"><a href="#" class="active">Projects</a></li>
+					<li class="item"><a href="#">About Me</a></li>
 					<li class="item"><a href="#">Contact</a></li>
 				</ul>
 			</nav>
@@ -60,22 +60,24 @@
 					<h1 class="about-title">My Projects</h1>
 				</div>
 
-				<div class="projects-container container-fluid">
-					<div class="project-holder col-sm-3">
+				<div class="projects-container-1 container-fluid">
+					<div class="project-holder col-sm-3" id="p-1">
 							<img class="project-photo" src="images/tictactoe.png">
-
 					</div>
-					<div class="project-holder col-sm-3">
+					<div class="project-holder col-sm-3" id="p-2">
 						<img class="project-photo" src="images/seatyourself.png">
 					</div>
-					<div class="project-holder col-sm-3">
-						<img class="project-photo" src="images/blog.png"
+					<div class="project-holder col-sm-3" id="p-3">
+						<img class="project-photo" src="images/blog.png">
 					</div>
-					<div class="project-holder col-sm-3">
+					<div class="project-holder col-sm-3" id="p-4">
 						<img class="project-photo" src="images/schedjewels.png">
 					</div>
 				</div>
 			</div>
+			<img class="arrow-2 float-left" src="images/arrow-down.png">
+			<img class="arrow-2 float-right" src="images/arrow-down.png">
+
 	</div>
 
 	<!-- Contact Page -->
@@ -84,18 +86,69 @@
 		<nav class="navbar">
 			<ul class="item-holder">
 				<li class="item"><a href="#">Home</a></li>
-				<li class="item"><a href="#" class="active">About</a></li>
 				<li class="item"><a href="#">Projects</a></li>
+				<li class="item"><a href="#" class="active">About Me</a></li>
 				<li class="item"><a href="#">Contact</a></li>
 			</ul>
 		</nav>
 		<div class="about-title-container">
-			<h1 class="about-title">Let's build something together!</h1>
+			<h1 class="about-title">Let me tell you a bit about myself.</h1>
 		</div>
+		<div class="center-block yes-button">
+			<p> Sure thang </p>
+		</div>
+
+		<div class="center-block what-hear-holder">
+			<div class="what-hear-title-container">
+				<h1 class="what-hear-title">What would you like to hear about first?</h1>
+			</div>
+			<div class="what-hear-container">
+				<div class="what-hear-button background-button">
+					<p> Background </p>
+				</div>
+				<div class="what-hear-button languages-button">
+					<p> Languages </p>
+				</div>
+				<div class="what-hear-button interests-button">
+					<p> Interests </p>
+				</div>
+			</div>
+		</div>
+
+		<div class="about-text-holder" id="background">	
+			<p class="b-1">I was born and raised in Toronto, Ontario.</p>
+			<p class="b-2">I grew up an athlete, playing basketball competitively until 2015</p>
+			<p class="b-3">I decided not to pursue it at the University Level</p>
+			<p class="b-4">Needing something else to immerse myself in, I took up Web Development</p>
+			<p class="b-5">Ever since I've been dedicated to producing the best work I can</p>
+		</div>
+		
+		<div class="about-text-holder" id="languages">
+			<p class="what-languages">So what languages do I work with?</p>
+			<p class="html">HTML: The Backbone</p>
+			<p class="css">CSS: The Decorator</p>
+			<p class="js">Javascript: The Animator </p>
+			<p class="jquery">jQuery: The Simpler Javascript</p>
+			<p class="bootstrap">Bootstrap: The Mobile Device's BFF</p>
+			<p class="rails">Ruby on Rails: Behind the Scenes</p>
+		</div>
+
+		<div class="about-text-holder" id="interests">
+			<p class="i-1">I love basketball, fashion, coffee, and dogs.</p>
+			<p class="i-2">I'm also a lover of food, specifically steaks and pasta</p>
+			<p class="i-3">Hip Hop is my favorite type of music</p>
+			<p class="i-4">And finally, I love building beautiful websites :) </p>
+			<p class="i-5">If I'm not coding I'm playing basketball, chilling with my dog, or adventuring.</p>
+		</div>
+
 	</div>
 
-	<div class="contact-page">
-
+	<div class="lb-5">
+		<a href="mailto:colingrenville0@gmail.com?subject=WebsiteInquiry">
+		<div class="contact-button">
+			<p> Let's Talk! </p>
+		</div>
+		</a> 
 	</div>
 
 </body>
