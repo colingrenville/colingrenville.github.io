@@ -22,30 +22,17 @@ $(document).ready(function() {
 // About Page //
 	$('.lb-4').hide();
 	$('.what-hear-holder').hide();
-	$('.about-text-holder').hide();
+	$('.about-me-container').hide();
+	$('.back-button').hide();	
 
-		// Background Info //
-		$('.b-1').hide();
-		$('.b-2').hide();
-		$('.b-3').hide();
-		$('.b-4').hide();
-		$('.b-5').hide();
+	$('.interest-title').hide();
+	$('.interest-text').hide();
 
-		// Languages Info //
-		$('.html').hide();
-		$('.css').hide();
-		$('.js').hide();
-		$('.jquery').hide();
-		$('.bootstrap').hide();
-		$('.rails').hide();
+	$('.background-title').hide();
+	$('.background-text').hide();
 
-		// Interests Info //
-
-		$('.i-1').hide();
-		$('.i-2').hide();
-		$('.i-3').hide();
-		$('.i-4').hide();
-		$('.i-5').hide();
+	$('.language-title').hide();
+	$('.language-text').hide();
 
 // Contact Page //
 	$('.lb-5').hide();
@@ -57,7 +44,7 @@ $(document).ready(function() {
 	$('.intro').delay(2000).fadeIn(1000);
 	$('.what-do').delay(3000).fadeIn(1000);
 	$('.lb-1').delay(5000).fadeOut(1500);
-	$('.lb-2').delay(6600).fadeIn(100);
+	$('.lb-2').delay(7000).fadeIn(100);
 	$('.navbar').delay(8000).fadeIn(1000);
 	$('.item').delay(9000).fadeIn(200);
 	$('.my-approach-holder').delay(9500).fadeIn(500);
@@ -99,39 +86,97 @@ $(document).ready(function() {
 			$('.what-hear-holder').fadeIn(500);
 			$('.background-button').on('click', function() {
 				clickCount += 1
-				$('.what-hear-holder').slideUp(500, function() {
-						var background = $('#background')
-						$('.background-button').hide();
-						$('.what-hear-title').text('What would you like to hear about next?');
-						$('#background').fadeIn(500, textFadeLoop(background) );
+				$('.what-hear-holder').fadeOut(500, function() {
+					$('.background-button').css('background-color', '#EEE')
+					$('.about-me-container').fadeIn(500, function() {
+						$('.background-title').fadeIn(500);
+						$('.background-text').fadeIn(500);
+						$('.back-button').delay(6000).fadeIn(500, function() {
+							$('.back-button').on('click', function() {
+								$('.about-me-container').fadeOut(500, function() {
+									$('.background-text').hide();
+									$('.background-title').hide();
+									$('.back-button').hide();
+									$('.what-hear-title').text('What would you like to hear about next?');
+									$('.what-hear-holder').fadeIn(500);
+									if (clickCount === 3) {
+										$('.lb-5').fadeIn(500);
+									};									
+								});
+							});
+						});
+					});
 				});
 			});
+		
+		$('.language-button').on('click', function() {
+			clickCount += 1
+			$('.what-hear-holder').fadeOut(function() {
+				$('.about-me-container').fadeIn(500, function() {
+					$('.language-button').css('background-color', '#EEE')
+					$('.language-title').fadeIn(500);
+					$('.language-text').fadeIn(500);
+					$('.back-button').delay(6000).fadeIn(500, function() {
+						$('.back-button').on('click', function() {
+							$('.about-me-container').fadeOut(500, function() {
+								$('.language-title').hide();
+								$('.language-text').hide();
+								$('.back-button').hide();
+								$('.what-hear-title').text('What would you like to hear about next?');
+								if (clickCount === 3) {
+									$('.what-hear-container').hide();
+									$('.what-hear-title').text('Enough about me')
+									$('.lb-5').delay(1000).fadeIn(500, function() {
+										var scrollLocation3 = $('.lb-2').height() + $('.lb-3').height() + $('.lb-4').height();
+										$('.lb-5').fadeIn(500, function() {
+											$('html, body').animate({ scrollTop: $(".lb-5").offset().top }, 1000);
+										});
+									});
+								};
+								if (clickCount < 3) {
+									$('.what-hear-holder').fadeIn(500);
+								}
+							});
+						});
+					});
+				});
+			});
+		});		
+		$('.interest-button').on('click', function() {
+			clickCount += 1
+			$('.what-hear-holder').fadeOut(function() {
+				$('.about-me-container').fadeIn(500, function() {
+					$('.interest-button').css('background-color', '#EEE')
+					$('.interest-title').fadeIn(500);
+					$('.interest-text').fadeIn(500);
+					$('.back-button').delay(6000).fadeIn(500, function() {
+						$('.back-button').on('click', function() {
+							$('.about-me-container').fadeOut(500, function() {
+								$('.interest-title').hide();
+								$('.interest-text').hide();
+								$('.back-button').hide();
+								$('.what-hear-title').text('What would you like to hear about next?');
+								$('.what-hear-holder').fadeIn(500);
+								if (clickCount === 3) {
+									$('.lb-5').fadeIn(500);
+									$('.what-hear-title').text("Enough about me, I'd like to hear from you.")
 
-			$('.language-button').on('click', function() {
-				clickCount += 1
-				$('.what-hear-holder').slideUp(500, function() {
-					var language = $('#language')
-					$('.language-button').hide();
-					$('.what-hear-title').text('What would you like to hear about next?');
-					$('#language').fadeIn(500, textFadeLoop(language) );
-				});
-			});
 
-			$('.interest-button').on('click', function() {
-				clickCount += 1
-				$('.what-hear-holder').slideUp(500, function() {
-					var interest = $('#interest')
-					$('.interest-button').hide();
-					$('.what-hear-title').text('What would you like to hear about next?');
-					$('#interest').fadeIn(500, textFadeLoop(interest) );
+								};
+							});
+						});
+					});
 				});
 			});
-		});
+		});		
+	});
 	});
 
 	function checkClickCount() {
-		if (clickCount === 2) {
-			$('.what-hear-title').text("Well, I guess there's only one option now!")
+
+		if (clickCount === 3) {
+			$('.what-hear-title').text("Enough about me, I want to hear from you.")
+			$('.what-hear-container').hide()
 		};
 
 		if (clickcount === 1) {
@@ -139,27 +184,6 @@ $(document).ready(function() {
 		};
 		
 	};
-
-	function textFadeLoop(param) {
-		count = param.children('p').length;
-		var incrementer = 0
-		param.children('p').each(function( index ) {
-			console.log(index);
-			 $(this).delay(4000 * (index)).fadeIn(500).delay(3000).fadeOut(500, function() {
-				 incrementer += 1
-				 console.log(incrementer);
-				 if (incrementer == count) {
-				 	fadeInHolder();
-			 	 }
-			 }); 
-		});
-		console.log(count);
-	};
-
-	function fadeInHolder() {
-		$('.what-hear-holder').fadeIn(500);
-	}
-
 
 	// My Approach is text //
 
