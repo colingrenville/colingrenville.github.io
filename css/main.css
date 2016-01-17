@@ -443,6 +443,7 @@ input:focus {
 textarea#comment:focus {
 	box-shadow: none;
 	outline: none;	
+	margin-bottom: 5vh;
 }
 
 input[type=submit] {
