@@ -213,8 +213,12 @@ $(document).ready(function() {
 		$(this).fadeOut(500, function() {
 			$('.email-form-container').fadeIn(500);
 		});
-	})
+	});
 
+	// Mailer Form Script //
 
-
+	$('submit').on('click', function() {
+	    $.ajax( { url: 'mail.php', type:'POST', dataType: 'html', data: content } ).done( function() { $('submit').fadeOut(500); } );        
+	});
 });
+
