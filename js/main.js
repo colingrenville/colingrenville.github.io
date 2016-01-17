@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
 // Landing Page Flash //
-	$('.lb-1').hide();
+	$('.lb-1').hide(); 
 	$('.intro').hide();
 	$('.what-do').hide(); 
 
 // Home Page //
-	$('.lb-2').hide();
+	$('.lb-2').hide(); 
 	$('.navbar').hide();
 	$('.item').hide();
 	$('.my-approach-holder').hide();
@@ -104,7 +104,7 @@ $(document).ready(function() {
 									if (clickCount === 3) {
 										$('.what-hear-container').hide();
 										$('.what-hear-title').text("Enough about me, let's hear from you.")
-										$('.lb-5').delay(1000).fadeIn(500, function() {
+										$('.lb-5').delay(500).fadeIn(500, function() {
 										var scrollLocation3 = $('.lb-2').height() + $('.lb-3').height() + $('.lb-4').height();
 										$('.lb-5').fadeIn(500, function() {
 											$('html, body').animate({ scrollTop: $(".lb-5").offset().top }, 1000);
@@ -135,7 +135,7 @@ $(document).ready(function() {
 								if (clickCount === 3) {
 									$('.what-hear-container').hide();
 									$('.what-hear-title').text("Enough about me, let's hear from you.")
-									$('.lb-5').delay(1000).fadeIn(500, function() {
+									$('.lb-5').delay(500).fadeIn(500, function() {
 										var scrollLocation3 = $('.lb-2').height() + $('.lb-3').height() + $('.lb-4').height();
 										$('.lb-5').fadeIn(500, function() {
 											$('html, body').animate({ scrollTop: $(".lb-5").offset().top }, 1000);
@@ -152,7 +152,7 @@ $(document).ready(function() {
 			});
 		});		
 		$('.interest-button').on('click', function() {
-			clickCount += 1
+			clickCount += 1 
 			$('.what-hear-holder').fadeOut(function() {
 				$('.about-me-container').fadeIn(500, function() {
 					$('.interest-button').css('background-color', '#EEE')
@@ -169,7 +169,7 @@ $(document).ready(function() {
 								if (clickCount === 3) {
 									$('.what-hear-container').hide();
 									$('.what-hear-title').text("Enough about me, let's hear from you.")
-									$('.lb-5').delay(1000).fadeIn(500, function() {
+									$('.lb-5').delay(500).fadeIn(500, function() {
 										var scrollLocation3 = $('.lb-2').height() + $('.lb-3').height() + $('.lb-4').height();
 										$('.lb-5').fadeIn(500, function() {
 											$('html, body').animate({ scrollTop: $(".lb-5").offset().top }, 1000);
