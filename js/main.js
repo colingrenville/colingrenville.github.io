@@ -15,7 +15,7 @@ $(document).ready(function() {
 // Projects Page //
 	$('.lb-3').hide();
 	$('.projects-container-1').hide();
-	$('.projects-container-2').hide();
+	$('.projects-container-2').hide(); 
 	$('.arrow-2').hide();
 	$('.project-holder').hide(); 
 
@@ -97,13 +97,13 @@ $(document).ready(function() {
 							$('.back-button').on('click', function() {
 								$('.about-me-container').fadeOut(500, function() {
 									$('.background-text').hide();
-									$('.background-title').hide();
+									$('.background-title').hide(); 
 									$('.back-button').hide();
 									$('.what-hear-title').text('What would you like to hear about next?');
 									$('.what-hear-holder').fadeIn(500);
 									if (clickCount === 3) {
 										$('.what-hear-container').hide();
-										$('.what-hear-title').text('Enough about me')
+										$('.what-hear-title').text("Enough about me, let's hear from you.")
 										$('.lb-5').delay(1000).fadeIn(500, function() {
 										var scrollLocation3 = $('.lb-2').height() + $('.lb-3').height() + $('.lb-4').height();
 										$('.lb-5').fadeIn(500, function() {
@@ -134,7 +134,7 @@ $(document).ready(function() {
 								$('.what-hear-title').text('What would you like to hear about next?');
 								if (clickCount === 3) {
 									$('.what-hear-container').hide();
-									$('.what-hear-title').text('Enough about me')
+									$('.what-hear-title').text("Enough about me, let's hear from you.")
 									$('.lb-5').delay(1000).fadeIn(500, function() {
 										var scrollLocation3 = $('.lb-2').height() + $('.lb-3').height() + $('.lb-4').height();
 										$('.lb-5').fadeIn(500, function() {
@@ -168,7 +168,7 @@ $(document).ready(function() {
 								$('.what-hear-holder').fadeIn(500);
 								if (clickCount === 3) {
 									$('.what-hear-container').hide();
-									$('.what-hear-title').text('Enough about me')
+									$('.what-hear-title').text("Enough about me, let's hear from you.")
 									$('.lb-5').delay(1000).fadeIn(500, function() {
 										var scrollLocation3 = $('.lb-2').height() + $('.lb-3').height() + $('.lb-4').height();
 										$('.lb-5').fadeIn(500, function() {
