@@ -3,7 +3,7 @@ $(document).ready(function() {
 // Landing Page Flash //
 	$('.lb-1').hide();
 	$('.intro').hide();
-	$('.what-do').hide(); }
+	$('.what-do').hide(); 
 
 // Home Page //
 	$('.lb-2').hide();
