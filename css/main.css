@@ -82,6 +82,7 @@ body {
 	height: 20vh;
 	background-color: #FFF;
 	border-bottom: 1px solid #EEE;
+	border-radius: 0;
 }
 
 .item-holder {
@@ -399,4 +400,49 @@ a.active:hover {
 	color: #E6BBAD;
 	margin: 0;
 	font-weight: 400;
+}
+
+input#name, input#email, input#comment {
+	display: inline-block;
+	background-color: transparent;
+  box-shadow: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+textarea#comment {
+	display: inline-block;
+	background-color: transparent;
+  box-shadow: none;
+  border: none;
+  border: 2px solid white;
+  color: white;
+}
+
+input#name:active {
+	color: red;
+}
+
+
+.email-form-container {
+	margin-top: 10vh;
+}
+.email-input {
+	width: 80%;
+	color: white;
+	font-size: 2.5em;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+textarea .email-input {
+	font-size: 1.5em;
+}
+
+.submit {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
 }

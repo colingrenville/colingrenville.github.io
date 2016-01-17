@@ -131,6 +131,7 @@
 	</div>
 
 	<div class="lb-5">
+
 		<nav class="navbar">
 			<ul class="item-holder">
 				<li class="item"><a href="#">Home</a></li>
@@ -140,11 +141,20 @@
 			</ul>
 		</nav>
 
-		<a href="mailto:colingrenville0@gmail.com?subject=WebsiteInquiry">
+		<!-- <a href="mailto:colingrenville0@gmail.com?subject=WebsiteInquiry"> -->
 		<div class="contact-button">
 			<p> Let's Talk! </p>
 		</div>
-		</a> 
+
+		<div class="email-form-container">
+			<form action="mailto:colingrenvillewebsites@gmail.com" enctype="text/plain" method="post">
+				<p class="email-input">What's your name? <input name="Name" type="text" id="name" size="40"></p>
+				<p class="email-input">What's your email address? <input name="E-mail" type="text" id="email" size="40"></p>
+				<p class="email-input">What can I help you with?</p>
+				<p class="email-input comment"><textarea name="Comment" cols="55" rows="4" id="comment"></textarea></p>
+				<p><input type="submit" class="center-block" name="Submit" value="Submit"></p>
+			</form>
+		</div>
 
 	</div>
 

@@ -3,7 +3,7 @@ $(document).ready(function() {
 // Landing Page Flash //
 	$('.lb-1').hide();
 	$('.intro').hide();
-	$('.what-do').hide();
+	$('.what-do').hide(); }
 
 // Home Page //
 	$('.lb-2').hide();
@@ -17,7 +17,7 @@ $(document).ready(function() {
 	$('.projects-container-1').hide();
 	$('.projects-container-2').hide();
 	$('.arrow-2').hide();
-	$('.project-holder').hide();
+	$('.project-holder').hide(); 
 
 // About Page //
 	$('.lb-4').hide();
@@ -36,6 +36,8 @@ $(document).ready(function() {
 
 // Contact Page //
 	$('.lb-5').hide();
+	$('.contact-question-container').hide();
+	$('.email-form-container').hide(); 
 
 
 // Home Page //
@@ -52,7 +54,7 @@ $(document).ready(function() {
 
 	// Scroll to Projects Page //
 
-	$('.arrow-1').on('click', function() {
+	$('.arrow-1').on('click', function() { 
 			var scrollLocation = $(window).height();
 			$('.lb-3').fadeIn(500, function() {
 				$('html, body').animate({
@@ -100,7 +102,14 @@ $(document).ready(function() {
 									$('.what-hear-title').text('What would you like to hear about next?');
 									$('.what-hear-holder').fadeIn(500);
 									if (clickCount === 3) {
-										$('.lb-5').fadeIn(500);
+										$('.what-hear-container').hide();
+										$('.what-hear-title').text('Enough about me')
+										$('.lb-5').delay(1000).fadeIn(500, function() {
+										var scrollLocation3 = $('.lb-2').height() + $('.lb-3').height() + $('.lb-4').height();
+										$('.lb-5').fadeIn(500, function() {
+											$('html, body').animate({ scrollTop: $(".lb-5").offset().top }, 1000);
+										});
+									});
 									};									
 								});
 							});
@@ -158,10 +167,14 @@ $(document).ready(function() {
 								$('.what-hear-title').text('What would you like to hear about next?');
 								$('.what-hear-holder').fadeIn(500);
 								if (clickCount === 3) {
-									$('.lb-5').fadeIn(500);
-									$('.what-hear-title').text("Enough about me, I'd like to hear from you.")
-
-
+									$('.what-hear-container').hide();
+									$('.what-hear-title').text('Enough about me')
+									$('.lb-5').delay(1000).fadeIn(500, function() {
+										var scrollLocation3 = $('.lb-2').height() + $('.lb-3').height() + $('.lb-4').height();
+										$('.lb-5').fadeIn(500, function() {
+											$('html, body').animate({ scrollTop: $(".lb-5").offset().top }, 1000);
+										});
+									});
 								};
 							});
 						});
@@ -195,6 +208,13 @@ $(document).ready(function() {
     };
  	
 	setTimeout( changingText, 10000);
+
+	$('.contact-button').on('click', function() {
+		$(this).fadeOut(500, function() {
+			$('.email-form-container').fadeIn(500);
+		});
+	})
+
 
 
 });
