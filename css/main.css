@@ -123,7 +123,7 @@ a.active:hover {
 	margin-top: 10vh;
 	justify-content: left;
 	width: 90%;
-	margin-left: 5vw;
+	margin-left: auto;
 	margin-right: auto;
 }
 
@@ -139,6 +139,7 @@ a.active:hover {
 	display: inline-block;
 }
 
+
 .float-left {
 	position: absolute;
 	bottom: 0;
@@ -150,65 +151,6 @@ a.active:hover {
 	bottom: 0;
 	right: 0;
 }
-
-@media (max-width: 1050px) and (min-width: 930px) {
-	.my-approach, .changing-text {
-		font-size: 4em;
-	}
-	
-}
-
-@media (max-width: 930px) and (min-width: 800px) {
-	.my-approach, .changing-text {
-		font-size: 3.5em;
-	}
-
-	.navbar {
-		font-size: 1.1em;
-	}
-}
-
-@media (max-width: 800px) and (min-width: 690px) {
-	.my-approach, .changing-text {
-		font-size: 3em;
-	}
-
-	.navbar {
-		font-size: 1.2em;
-	}
-}
-
-@media (max-width: 691px) and (min-width: 550px) {
-	.my-approach, .changing-text {
-		font-size: 5em;
-	}
-
-	.navbar {
-		font-size: 1.4em;
-		}
-}
-
-@media (max-width: 550px) and (min-width: 350px) {
-	.my-approach, .changing-text {
-		font-size: 7em;
-	}
-
-	.navbar {
-		font-size: 2em;
-	}
-}
-
-@media (max-width: 351px) and (min-width: 275px) {
-	.my-approach, .changing-text {
-		font-size: 8em;
-	}
-
-	.navbar {
-		font-size: 2em;
-	}
-}
-
-
 
 .float-right {
 	float: right;
@@ -265,6 +207,7 @@ a.active:hover {
 	margin-bottom: 1vh;
 	transform: scale(1);
 	transition: transform .5s ease;
+	text-align: center;
 }
 
 .project-holder:hover {
@@ -273,7 +216,11 @@ a.active:hover {
 	transition: transform .25s ease;
 }
 .project-photo {
+	display: inline-block;
 	height: 100%;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .project-name {
@@ -569,4 +516,77 @@ input[type=submit]:hover {
 
 ::-webkit-resizer {
 	background: #E6BBAD;
+}
+
+/* Media Queries */
+
+@media (max-width: 875px) and (min-width: 768px) {
+	.my-approach {
+		font-size: 3.75em;
+	}
+}
+
+@media (max-width: 769px) and (min-width: 620px) {
+	.my-approach {
+		font-size: 3.25em;
+	}
+
+	img.arrow-1, img.arrow-2 {
+		height: 110px;
+	}
+}
+
+@media (max-width: 621px) and (min-width: 473px) {
+	.my-approach {
+		font-size: 2.45em;
+	}
+
+	img.arrow-1, img.arrow-2 {
+		height: 100px;
+	}
+}
+
+@media (max-width: 474px) and (min-width: 375px) {
+	.my-approach {
+		font-size: 3em;
+	}
+
+	img.arrow-1, img.arrow-2 {
+		height: 90px;
+	}
+
+	.item-holder {
+
+	}
+
+	.lb-1 {
+		font-size: 3em;
+	}
+}
+
+@media (max-width: 420px) {
+	.item-holder {
+		justify-content: center;
+		padding-left: 0;
+		width: 100%;
+	}
+	
+	.lb-1 {
+		font-size: 3em;
+	}
+}
+@media (max-width: 376px) {
+
+	.item-holder {
+		font-size: 1.25em;
+	}
+
+	.my-approach {
+		font-size: 2.5em;
+	}
+
+	img.arrow-1, img.arrow-2 {
+		height: 80px;
+	}
+
 }
