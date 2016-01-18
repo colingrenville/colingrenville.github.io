@@ -215,6 +215,11 @@ $(document).ready(function() {
 		});
 	});
 
-	// Mailer Form Script //
+	// Navbar Scroll //
+
+	$('.home-trig').on('click', function() {
+		console.log('This works');
+	});
 });
 
+	
