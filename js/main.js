@@ -8,7 +8,7 @@ $(document).ready(function() {
 // Home Page //
 	$('.lb-2').hide(); 
 	$('.navbar').hide();
-	$('.item').hide(); {
+	$('.item').hide(); 
 	$('.my-approach-holder').hide();
 	$('.arrow-1').hide();
 
