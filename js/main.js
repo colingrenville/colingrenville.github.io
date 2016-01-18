@@ -216,9 +216,5 @@ $(document).ready(function() {
 	});
 
 	// Mailer Form Script //
-
-	$('submit').on('click', function() {
-	    $.ajax( { url: 'mail.php', type:'POST', dataType: 'html', data: content } ).done( function() { $('submit').fadeOut(500); } );        
-	});
 });
 
