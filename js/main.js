@@ -80,6 +80,15 @@ $(document).ready(function() {
 		});
 	});
 
+	$('.project-holder').on( {
+		mouseenter: function() {
+		$(this).children().css('display', 'block');
+		}, 
+		mouseleave: function() {
+		$(this).children().not('.project-photo').css('display', 'none');
+		}
+	});
+
 	// About Page Interactive //
 
 	$('.yes-button').on('click', function() {

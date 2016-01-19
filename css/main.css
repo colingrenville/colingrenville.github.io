@@ -207,6 +207,7 @@ a.active:hover {
 
 
 .project-holder {
+	position: relative;
 	overflow: hidden;
 	max-height: 40vh;
 	margin-top: 1vh;
@@ -229,21 +230,28 @@ a.active:hover {
 	margin-right: auto;
 }
 
-.project-name {
+.project-hover-info {
+	position: absolute;
+	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0,0,0,0.8);
-	opacity: 1;
+	background-color: rgba(0,0,0,0.7);
+	display: none;
 }
 
-.project-name span {
+.img-title {
 	text-align: center;
-	vertical-align: middle;
+  color: white;
+  margin-top: 50%;
+  font-size: 2em;
 }
 
-.project-name:hover {
-	opacity: 1;
+.img-info {
+	color: white;
+	font-size: 1.2em;
+	text-align: center;
 }
+
 
 /* About */
 
