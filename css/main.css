@@ -3,7 +3,7 @@ body {
 	background-color: lightblue ;
 }
 
-@-webkit-keyframes COLORS {
+/*@-webkit-keyframes COLORS {
   0%  { background-color: blue; }
   10% { background-color: purple; }
   20% { background-color: pink; }
@@ -51,15 +51,14 @@ body {
   70% { background-color: green; }
   80% { background-color: gold; }
   90% { background-color: orchid; }
-}
+}*/
 
 .lb-1 {
 	padding-top: 20vh;
 	margin-top: 0;
-	animation: COLORS 2s;
 	height: 100vh;
 	width: 100vw;
-	background-color: lightblue;
+	background-color: #E6BBAD;
 	color: white;
 	font-weight: 300;
 	font-size: 4em;

@@ -43,14 +43,22 @@ $(document).ready(function() {
 // Home Page //
 
 	$('.lb-1').slideDown(800);
-	$('.intro').delay(2000).fadeIn(1000);
-	$('.what-do').delay(3000).fadeIn(1000);
-	$('.lb-1').delay(5000).fadeOut(1500);
-	$('.lb-2').delay(7000).fadeIn(100);
-	$('.navbar').delay(8000).fadeIn(1000);
-	$('.item').delay(9000).fadeIn(200);
-	$('.my-approach-holder').delay(9500).fadeIn(500);
-	$('.arrow-1').delay(13000).fadeIn(500);
+	$('.intro').delay(1000).fadeIn(1000, function() {
+		$('.what-do').fadeIn(1000, function() {
+			$('.lb-1').delay(3000).slideUp(1500, function() {
+				$('.lb-2').delay(500).fadeIn(100, function() {
+					$('.navbar').delay(500).fadeIn(1000, function() {
+						$('.item').fadeIn(500, function() {
+							$('.my-approach-holder').fadeIn(500, function() {
+								$('.arrow-1').delay(2000).fadeIn(500);
+							});						
+						});	
+					});	
+				});
+			});
+		});
+	});
+	
 
 	// Scroll to Projects Page //
 
