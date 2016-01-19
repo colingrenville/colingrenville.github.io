@@ -170,13 +170,19 @@ a.active:hover {
 	background-color: #E6BBAD;
 }
 
+
+@media (max-width: 768px) {
+	.lb-3 {
+		padding-bottom: 20vh;
+	}
+}
 .project-title {
 	height: 20vh;
 	background-color: white;
 	float: left;
 }
 
-.about-title {
+.project-page-title {
 	display: inline-block;
 	margin-left: 5vw;
 	color: white;
@@ -255,6 +261,15 @@ a.active:hover {
 	max-width: 100%;
 }
 
+.about-title {
+	display: inline-block;
+	margin-left: 5vw;
+	color: white;
+	font-size: 4em;
+	padding-bottom: 1vh;
+	border-bottom: 3px solid white;
+}
+
 .yes-button {
 	width: 250px;
 	margin-left: auto;
@@ -291,10 +306,14 @@ a.active:hover {
 
 }
 
+.what-hear-title {
+	font-size: 2em;
+}
 .what-hear-container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-	width: 80vw;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -305,6 +324,8 @@ a.active:hover {
   font-size: 2.5em;
   color: lightblue;
   background-color: white;
+  padding-left: 5px;
+  padding-right: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 3vh;
@@ -335,6 +356,119 @@ a.active:hover {
 .about-me-title {
 	font-size: 2em;
 	margin-top: 0;
+}
+
+@media (max-width: 415px) {
+	.about-me-title {
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+	.about-title {
+		font-size: 3em;
+	}
+
+	.project-page-title {
+		font-size: 3em;
+	}
+
+}
+
+@media (max-width: 769px) and (min-width: 565px) {
+	.about-title {
+		font-size: 2.5em;
+	}
+
+	.project-page-title {
+		font-size: 2.5em;
+	}
+}
+
+@media (max-width: 630px) {
+	.what-hear-holder {
+		margin-top: 5vh;
+	}
+
+	.what-hear-title {
+		font-size: 2em;
+	}
+}
+
+@media (max-width: 658px) {
+	.lb-4 {
+		padding-bottom: 5vh;
+	}
+}
+
+@media (max-width: 566px) and (min-width: 473px) {
+	.about-title {
+		font-size: 2em;
+	}
+
+	.project-page-title {
+		font-size: 2em;
+	}
+
+}
+
+@media (max-width: 474px) and (min-width: 375px) {
+
+	.about-title {
+		font-size: 1.6em;
+	}
+
+	.project-page-title {
+		font-size: 1.6em;
+	}
+
+	.about-me-title {
+		font-size: 1.3em;
+	}
+
+	.about-me-text {
+		font-size: .8em;
+	}
+
+	.about-me-container {
+		margin-top: 0vh;
+	}
+
+}
+
+@media (max-width: 376px) {
+
+	.about-title {
+		font-size: 1.4em;
+	}
+	.about-me-container {
+		margin-top: 0;
+	}
+
+	.project-page-title {
+		font-size: 1.4em;
+	}
+
+	.about-me-title {
+		font-size: 1.1em;
+	}
+
+	.about-me-text {
+		font-size: .7em;
+	}
+
+}
+
+
+@media (max-width: 566px) {
+	.what-hear-title-container {
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+	.about-title-container {
+		padding-left: 5vw;
+		padding-right: 5v2;
+	}
 }
 
 .back-button {
@@ -423,6 +557,37 @@ a.active:hover {
 	font-weight: 400;
 }
 
+@media (max-width: 763px) {
+	.contact-button {
+		width: 400px;
+	}
+
+	.contact-button p {
+		font-size: 4em;
+	}
+}
+
+@media (max-width: 500px) {
+	.contact-button {
+		width: 300px;
+	}
+
+	.contact-button p {
+		font-size: 3em;
+	}
+}
+
+@media (max-width: 375px) {
+	.contact-button {
+		width: 200px;
+	}
+
+	.contact-button p {
+		font-size: 2em;
+	}
+}
+
+
 input#name, input#email, input#comment {
 	display: inline-block;
 	background-color: transparent;
@@ -430,6 +595,7 @@ input#name, input#email, input#comment {
   border: none;
   border-bottom: 2px solid white;
   color: white;
+  width: 80%;
 }
 
 textarea#comment {
@@ -450,6 +616,18 @@ input:focus {
 	color: white;
 	text-align: center;
 	margin-bottom: 7vh;
+}
+
+@media (max-width: 473px) {
+	.form-title {
+		font-size: 2em;
+	}
+}
+
+@media (max-width: 375px) {
+	.form-title {
+		font-size: 1.8em;
+	}
 }
 
 .email-form-container {
