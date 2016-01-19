@@ -603,7 +603,13 @@ input#name, input#email, input#comment {
   border: none;
   border-bottom: 2px solid white;
   color: white;
-  width: 80%;
+  width: 60%;
+}
+
+@media (max-width: 473px) {
+	input#name, input#email, input#comment  {
+		width: 80%;
+	}
 }
 
 textarea#comment {
