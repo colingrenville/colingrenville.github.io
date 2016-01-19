@@ -446,12 +446,17 @@ input:focus {
 	outline: none;
 }
 
+.form-title {
+	color: white;
+	text-align: center;
+	margin-bottom: 7vh;
+}
 
 .email-form-container {
 	margin-top: 10vh;
 }
 .email-input {
-	width: 80%;
+	text-align: center;
 	color: white;
 	font-size: 1.8em;
 	margin-left: auto;
@@ -484,7 +489,7 @@ input[type=submit] {
 	text-align: center;
 	color: #E6BBAD;
 	font-weight: 400;
-	margin-top: 5vh;
+	margin-top: 10vh;
 }
 
 input[type=submit]:hover {

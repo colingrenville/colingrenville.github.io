@@ -218,7 +218,21 @@ $(document).ready(function() {
 	// Navbar Scroll //
 
 	$('.home-trig').on('click', function() {
-		console.log('This works');
+		console.log('this works');
+		$('html, body').animate({ scrollTop: $(".lb-2").offset().top }, 1000);
+	});
+
+	$('.proj-trig').on('click', function() {
+		console.log('this works');
+		$('html, body').animate({ scrollTop: $(".lb-3").offset().top }, 1000);
+	});
+
+	$('.about-trig').on('click', function() {
+		$('html, body').animate({ scrollTop: $(".lb-4").offset().top }, 1000);
+	});
+
+	$('.contact-trig').on('click', function() {
+		$('html, body').animate({ scrollTop: $(".lb-5").offset().top }, 1000);
 	});
 });
 
